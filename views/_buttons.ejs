@@ -1,0 +1,13 @@
+<div class="buttons-wrapper">
+  <a href="/" class="logo"><strong>Haste</strong>bin</a>
+  <div class="buttons">
+    <a class="btn" href="/new"><i class="ri-file-add-line"></i></a>
+    <% if (locals.canSave) { %>
+    <button class="btn" type="submit"><i class="ri-save-2-line"></i></button>
+    <% } %> <% if (locals.id != null) { %>
+    <a class="btn" href="/<%= locals.id %>/duplicate"
+      ><i class="ri-file-copy-2-line"></i
+    ></a>
+    <% } %>
+  </div>
+</div>
